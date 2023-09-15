@@ -291,6 +291,9 @@ sed '=' file1 -- > to print line numbers in a file
 sed -n '5,13p' file1 -- > to print line 5 to 13
 sed -e '5,13p' file1 -- > to print line 5 to 13 double times
 
+AWK: -> to print only required column details
+cat file1 | awk -F" " '{print $2}' --> prints the 2nd column values only in the list of file1
+
 NETWORKING:
 ip addr
 ip addr show
